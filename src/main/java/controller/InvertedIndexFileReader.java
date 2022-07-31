@@ -21,6 +21,8 @@ public class InvertedIndexFileReader {
                     Scanner scanner = new Scanner(file);
                     while (scanner.hasNext()) {
                         String word = scanner.next().toLowerCase();
+                        word = word.replace(".", "");
+                        word = word.replace(",", "");
                         SnowballStemmer stemmer = new porterStemmer();
                         stemmer.setCurrent(word);
                         stemmer.stem();

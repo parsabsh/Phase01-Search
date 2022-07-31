@@ -58,7 +58,7 @@ public class MainController {
                     break;
                 }
             }
-            if (!appearances.contains(fileName)) continue;
+            if (!appearances.contains(fileName) || wordsWithPlus.isEmpty()) continue;
 
             boolean shouldBeDeleted = true;
             for (String word : wordsWithPlus) {
@@ -68,6 +68,7 @@ public class MainController {
             }
             if (shouldBeDeleted) iterator.remove();
         }
-        return appearances.isEmpty() ? "Nothing found!" : appearances.toString();
+        if (appearances.isEmpty()) return "Nothing found!";
+        return appearances.toString();
     }
 }

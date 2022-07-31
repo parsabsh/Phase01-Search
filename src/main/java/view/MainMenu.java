@@ -3,7 +3,6 @@ package view;
 import controller.MainController;
 
 import java.io.FileNotFoundException;
-import java.nio.file.Files;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -22,11 +21,11 @@ public class MainMenu {
                 System.out.println("Invalid address");
             }
         }
+        System.out.println("         <<Guide>>");
+        System.out.println("nothing before a word : and");
+        System.out.println("+ before a word : or");
+        System.out.println("- before a word : exclude");
         while (true) {
-            System.out.println("         <<Guide>>");
-            System.out.println("nothing before a word : and");
-            System.out.println("+ before a word : or");
-            System.out.println("- before a word : exclude");
             System.out.println("Enter your query:");
             String input = scanner.nextLine();
             if (input.equals("exit")) {

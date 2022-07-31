@@ -18,7 +18,7 @@ public class InvertedIndexDataBase {
         for (String word : words) {
             listOfAppearances.add(getAppearances(word));
         }
-        ArrayList<String> commons = new ArrayList<>(listOfAppearances.get(1));
+        ArrayList<String> commons = new ArrayList<>(listOfAppearances.get(0));
 
         for (ListIterator<ArrayList<String>> iter = listOfAppearances.listIterator(1); iter.hasNext(); ) {
             commons.retainAll(iter.next());

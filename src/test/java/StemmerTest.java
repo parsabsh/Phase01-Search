@@ -23,4 +23,14 @@ public class StemmerTest {
         string = stemmer.getCurrent();
         Assert.assertEquals("get here -pillows +pillow", string);
     }
+
+    @Test
+    public void doesDeletesDots() {
+        String string = "World.";
+        SnowballStemmer stemmer = new porterStemmer();
+        stemmer.setCurrent(string);
+        stemmer.stem();
+        string = stemmer.getCurrent();
+        Assert.assertEquals("World.", string);
+    }
 }

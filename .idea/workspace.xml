@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="Porter Stemming implemented">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StemmerTest.java" afterDir="false" />
+    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="advanced query implemented (not tested)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/myData/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/myData/2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59126" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59126" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59284" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59284" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59378" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59378" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59554" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59554" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StemmerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StemmerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +48,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="JUnit.StemmerTest.multipleWordStemmerTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Phase01-Search" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StemmerTest.doesDeletesDots" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase01-Search" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
+      <option name="METHOD_NAME" value="doesDeletesDots" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,9 +88,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StemmerTest.doesDeletesDots" />
         <item itemvalue="JUnit.StemmerTest.multipleWordStemmerTest" />
         <item itemvalue="JUnit.StemmerTest.stemmerTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659245422109</updated>
-      <workItem from="1659245423260" duration="11879000" />
+      <workItem from="1659245423260" duration="13083000" />
     </task>
     <task id="LOCAL-00001" summary="add some main classes">
       <created>1659249634637</created>
@@ -126,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659253446061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="advanced query implemented (not tested)">
+      <created>1659261208501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659261208501</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +175,18 @@
     <MESSAGE value="receiving data implemented" />
     <MESSAGE value="simple query implemented" />
     <MESSAGE value="Porter Stemming implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Porter Stemming implemented" />
+    <MESSAGE value="advanced query implemented (not tested)" />
+    <option name="LAST_COMMIT_MESSAGE" value="advanced query implemented (not tested)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/MainController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
