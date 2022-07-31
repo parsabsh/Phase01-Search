@@ -14,7 +14,6 @@ public class MainMenu {
         while (true) {
             System.out.println("Enter the address of your root folder:");
             String fileAddress = scanner.nextLine();
-
             try {
                 controller.readAndStoreWordsInDirectory(fileAddress);
                 System.out.println("Directory successfully added");
@@ -26,6 +25,11 @@ public class MainMenu {
         while (true) {
             System.out.println("Enter a word to query:");
             String word = scanner.nextLine();
+            if (word.contains(" ")) {
+                System.out.println("You can't search a word with space!");
+                continue;
+            }
+            System.out.println(controller.search(word));
         }
     }
 }
