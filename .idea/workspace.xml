@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="simple query implemented">
+    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="Porter Stemming implemented">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StemmerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59126" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59126" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59284" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59284" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59378" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59378" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EnglishData/59554" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EnglishData/59554" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StemmerTest.multipleWordStemmerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Phase01-Search" />
@@ -53,8 +60,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StemmerTest.multipleWordStemmerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase01-Search" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
+      <option name="METHOD_NAME" value="multipleWordStemmerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StemmerTest.stemmerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase01-Search" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
+      <option name="METHOD_NAME" value="stemmerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StemmerTest.multipleWordStemmerTest" />
+        <item itemvalue="JUnit.StemmerTest.stemmerTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -67,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659245422109</updated>
-      <workItem from="1659245423260" duration="5954000" />
+      <workItem from="1659245423260" duration="11879000" />
     </task>
     <task id="LOCAL-00001" summary="add some main classes">
       <created>1659249634637</created>
@@ -90,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659252631314</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Porter Stemming implemented">
+      <created>1659253446061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659253446061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +160,7 @@
     <MESSAGE value="add some main classes" />
     <MESSAGE value="receiving data implemented" />
     <MESSAGE value="simple query implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple query implemented" />
+    <MESSAGE value="Porter Stemming implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Porter Stemming implemented" />
   </component>
 </project>

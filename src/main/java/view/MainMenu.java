@@ -23,13 +23,16 @@ public class MainMenu {
             }
         }
         while (true) {
-            System.out.println("Enter a word to query:");
-            String word = scanner.nextLine();
-            if (word.contains(" ")) {
-                System.out.println("You can't search a word with space!");
-                continue;
+            System.out.println("         <<Guide>>");
+            System.out.println("nothing before a word : and");
+            System.out.println("+ before a word : or");
+            System.out.println("- before a word : exclude");
+            System.out.println("Enter your query:");
+            String input = scanner.nextLine();
+            if (input.equals("exit")) {
+                break;
             }
-            System.out.println(controller.search(word));
+            System.out.println(controller.search(input));
         }
     }
 }

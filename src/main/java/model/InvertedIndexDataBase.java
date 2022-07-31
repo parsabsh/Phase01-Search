@@ -1,7 +1,6 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 public class InvertedIndexDataBase {
     private final HashMap<String, ArrayList<String>> invertedIndexMap = new HashMap<>();
@@ -12,5 +11,23 @@ public class InvertedIndexDataBase {
 
     public ArrayList<String> getAppearances(String word) {
         return invertedIndexMap.get(word);
+    }
+
+    public ArrayList<String> getCommonAppearances(ArrayList<String> words) {
+        ArrayList<ArrayList<String>> listOfAppearances = new ArrayList<>();
+        for (String word : words) {
+            listOfAppearances.add(getAppearances(word));
+        }
+        ArrayList<String> commons = new ArrayList<>(listOfAppearances.get(1));
+
+        for (ListIterator<ArrayList<String>> iter = listOfAppearances.listIterator(1); iter.hasNext(); ) {
+            commons.retainAll(iter.next());
+        }
+
+        return commons;
+    }
+
+    public Boolean hasAppearance(String word, String fileName){
+        return getAppearances(word).contains(fileName);
     }
 }
