@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="receiving data implemented">
+    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="simple query implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659245422109</updated>
-      <workItem from="1659245423260" duration="5248000" />
+      <workItem from="1659245423260" duration="5954000" />
     </task>
     <task id="LOCAL-00001" summary="add some main classes">
       <created>1659249634637</created>
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659251995312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="simple query implemented">
+      <created>1659252631314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659252631314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add some main classes" />
     <MESSAGE value="receiving data implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="receiving data implemented" />
+    <MESSAGE value="simple query implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple query implemented" />
   </component>
 </project>

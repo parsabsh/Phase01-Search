@@ -1,5 +1,8 @@
 package controller;
 
+import org.tartarus.snowball.SnowballStemmer;
+import org.tartarus.snowball.ext.porterStemmer;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -18,6 +21,10 @@ public class InvertedIndexFileReader {
                     Scanner scanner = new Scanner(file);
                     while (scanner.hasNext()) {
                         String word = scanner.next().toLowerCase();
+                        SnowballStemmer stemmer = new porterStemmer();
+                        stemmer.setCurrent(word);
+                        stemmer.stem();
+                        word = stemmer.getCurrent();
                         if (invertedIndexMap.containsKey(word)) {
                             invertedIndexMap.get(word).add(file.getName());
                         } else {

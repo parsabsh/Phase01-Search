@@ -1,6 +1,8 @@
 package controller;
 
 import model.InvertedIndexDataBase;
+import org.tartarus.snowball.SnowballStemmer;
+import org.tartarus.snowball.ext.porterStemmer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,10 +25,15 @@ public class MainController {
     }
 
     public String search(String word) {
-        ArrayList<String> appearances = dataBase.getAppearances(word.toLowerCase());
+        word = word.toLowerCase();
+        SnowballStemmer stemmer = new porterStemmer();
+        stemmer.setCurrent(word);
+        stemmer.stem();
+        word = stemmer.getCurrent();
+        ArrayList<String> appearances = dataBase.getAppearances(word);
         if (appearances != null)
             return appearances.toString();
         else
-            return null;
+            return "Nothing found!";
     }
 }
