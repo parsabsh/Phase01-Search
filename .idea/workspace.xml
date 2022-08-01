@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="unit test with 100% coverage done">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,14 @@
       <recent name="E:\Programming\Talkademy\Phase01-Search\src\main\resources\testData\subDirectory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Phase01-Search" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase01-Search" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,23 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerTest.simpleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phase01-Search" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="METHOD_NAME" value="simpleSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ControllerTest" />
         <item itemvalue="JUnit.ControllerTest.advancedQueryWithMultipleWords" />
         <item itemvalue="JUnit.ControllerTest.advancedQueryWithPlus" />
         <item itemvalue="JUnit.ControllerTest.advancedQuery" />
-        <item itemvalue="JUnit.ControllerTest.simpleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659245422109</updated>
       <workItem from="1659245423260" duration="15050000" />
-      <workItem from="1659332528091" duration="8073000" />
+      <workItem from="1659332528091" duration="9873000" />
     </task>
     <task id="LOCAL-00001" summary="add some main classes">
       <created>1659249634637</created>
@@ -172,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659352029184</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="unit test with 100% coverage done">
+      <created>1659352424433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659352424433</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

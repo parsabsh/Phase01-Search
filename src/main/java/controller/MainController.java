@@ -43,6 +43,9 @@ public class MainController {
         ArrayList<String> appearances = new ArrayList<>(getDataBase().getCommonAppearances(wordsWithoutPrep));
 
         for (Iterator<String> iterator = appearances.iterator(); iterator.hasNext(); ) {
+            if (wordsWithMinus.isEmpty() && wordsWithPlus.isEmpty()) {
+                break;
+            }
             String fileName = iterator.next();
             for (String word : wordsWithMinus) {
                 if (getDataBase().hasAppearance(word, fileName)) {
