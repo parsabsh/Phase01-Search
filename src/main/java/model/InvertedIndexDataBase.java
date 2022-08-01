@@ -23,10 +23,6 @@ public class InvertedIndexDataBase {
             listOfAppearances.add(getAppearances(word));
         }
 
-//        if (listOfAppearances.get(0) == null) {
-//            return new ArrayList<>();
-//        }
-
         ArrayList<String> commons = new ArrayList<>(listOfAppearances.get(0));
 
         for (ListIterator<ArrayList<String>> iter = listOfAppearances.listIterator(1); iter.hasNext(); ) {
