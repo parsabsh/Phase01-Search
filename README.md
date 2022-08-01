@@ -11,6 +11,7 @@
 ## Notes (Phase 2)
 ### Clean Code
 - Less Code, Less Problem!
+- Time heals everything… except bad code.
 - ...
 ## Notes (Phase 3)
 ### Unit Test
