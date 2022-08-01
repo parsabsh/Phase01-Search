@@ -10,7 +10,11 @@ public class InvertedIndexDataBase {
     }
 
     public ArrayList<String> getAppearances(String word) {
-        return invertedIndexMap.get(word);
+        if (invertedIndexMap.get(word) == null) {
+            return new ArrayList<>();
+        } else {
+            return invertedIndexMap.get(word);
+        }
     }
 
     public ArrayList<String> getCommonAppearances(ArrayList<String> words) {
@@ -18,6 +22,11 @@ public class InvertedIndexDataBase {
         for (String word : words) {
             listOfAppearances.add(getAppearances(word));
         }
+
+//        if (listOfAppearances.get(0) == null) {
+//            return new ArrayList<>();
+//        }
+
         ArrayList<String> commons = new ArrayList<>(listOfAppearances.get(0));
 
         for (ListIterator<ArrayList<String>> iter = listOfAppearances.listIterator(1); iter.hasNext(); ) {

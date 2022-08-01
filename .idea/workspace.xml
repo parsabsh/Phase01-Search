@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="advanced query implemented (not tested)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/myData/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/myData/2" afterDir="false" />
+    <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="advanced query bugs fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testData/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testData/subDirectory/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InvertedIndexFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StemmerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StemmerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,39 +49,56 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\Talkademy\Phase01-Search\src\main\resources\testData\subDirectory" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ControllerTest">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase01-Search" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemmerTest.doesDeletesDots" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.advancedQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase01-Search" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
-      <option name="METHOD_NAME" value="doesDeletesDots" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="advancedQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemmerTest.multipleWordStemmerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.advancedQueryWithMultipleWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase01-Search" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
-      <option name="METHOD_NAME" value="multipleWordStemmerTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="advancedQueryWithMultipleWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemmerTest.stemmerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.advancedQueryWithPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Phase01-Search" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StemmerTest" />
-      <option name="METHOD_NAME" value="stemmerTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="advancedQueryWithPlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.simpleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phase01-Search" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="simpleSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,10 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.StemmerTest.doesDeletesDots" />
-        <item itemvalue="JUnit.StemmerTest.multipleWordStemmerTest" />
-        <item itemvalue="JUnit.StemmerTest.stemmerTest" />
+        <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.ControllerTest.advancedQueryWithMultipleWords" />
+        <item itemvalue="JUnit.ControllerTest.advancedQueryWithPlus" />
+        <item itemvalue="JUnit.ControllerTest.advancedQuery" />
+        <item itemvalue="JUnit.ControllerTest.simpleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +122,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659245422109</updated>
-      <workItem from="1659245423260" duration="13083000" />
+      <workItem from="1659245423260" duration="15050000" />
+      <workItem from="1659332528091" duration="7627000" />
     </task>
     <task id="LOCAL-00001" summary="add some main classes">
       <created>1659249634637</created>
@@ -140,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659261208501</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="advanced query bugs fixed">
+      <created>1659262309550</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659262309550</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,17 +203,11 @@
     <MESSAGE value="simple query implemented" />
     <MESSAGE value="Porter Stemming implemented" />
     <MESSAGE value="advanced query implemented (not tested)" />
-    <option name="LAST_COMMIT_MESSAGE" value="advanced query implemented (not tested)" />
+    <MESSAGE value="advanced query bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="advanced query bugs fixed" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/MainController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Phase01_Search$StemmerTest.ic" NAME="StemmerTest Coverage Results" MODIFIED="1659332548897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Phase01_Search$ControllerTest.ic" NAME="ControllerTest Coverage Results" MODIFIED="1659351804281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

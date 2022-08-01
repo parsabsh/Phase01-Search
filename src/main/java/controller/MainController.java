@@ -10,19 +10,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MainController {
-    private InvertedIndexDataBase dataBase = new InvertedIndexDataBase();
+    private final InvertedIndexDataBase dataBase = new InvertedIndexDataBase();
     private final InvertedIndexFileReader fileReader = new InvertedIndexFileReader();
 
     public void readAndStoreWordsInDirectory(String directoryFile) throws FileNotFoundException {
-        fileReader.readFilesInFolder(new File(directoryFile), dataBase.getInvertedIndexMap());
-    }
-
-    public InvertedIndexDataBase getDataBase() {
-        return dataBase;
-    }
-
-    public void setDataBase(InvertedIndexDataBase dataBase) {
-        this.dataBase = dataBase;
+        fileReader.readFilesInFolder(new File(directoryFile), getDataBase().getInvertedIndexMap());
     }
 
     public String search(String input) {
@@ -48,12 +40,12 @@ public class MainController {
                 wordsWithoutPrep.add(word);
             }
         }
-        ArrayList<String> appearances = new ArrayList<>(dataBase.getCommonAppearances(wordsWithoutPrep));
+        ArrayList<String> appearances = new ArrayList<>(getDataBase().getCommonAppearances(wordsWithoutPrep));
 
         for (Iterator<String> iterator = appearances.iterator(); iterator.hasNext(); ) {
             String fileName = iterator.next();
             for (String word : wordsWithMinus) {
-                if (dataBase.hasAppearance(word, fileName)) {
+                if (getDataBase().hasAppearance(word, fileName)) {
                     iterator.remove();
                     break;
                 }
@@ -62,7 +54,7 @@ public class MainController {
 
             boolean shouldBeDeleted = true;
             for (String word : wordsWithPlus) {
-                if (dataBase.hasAppearance(word, fileName)) {
+                if (getDataBase().hasAppearance(word, fileName)) {
                     shouldBeDeleted = false;
                 }
             }
@@ -70,5 +62,9 @@ public class MainController {
         }
         if (appearances.isEmpty()) return "Nothing found!";
         return appearances.toString();
+    }
+
+    public InvertedIndexDataBase getDataBase() {
+        return dataBase;
     }
 }
