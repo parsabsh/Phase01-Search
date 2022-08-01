@@ -9,6 +9,14 @@ public class InvertedIndexDataBase {
         return invertedIndexMap;
     }
 
+    public ArrayList<String> getAllFiles() {
+        HashSet<String> answer = new HashSet<>();
+        for (String word : invertedIndexMap.keySet()) {
+            answer.addAll(invertedIndexMap.get(word));
+        }
+        return new ArrayList<>(answer);
+    }
+
     public ArrayList<String> getAppearances(String word) {
         if (invertedIndexMap.get(word) == null) {
             return new ArrayList<>();
@@ -17,7 +25,7 @@ public class InvertedIndexDataBase {
         }
     }
 
-    public ArrayList<String> getCommonAppearances(ArrayList<String> words) {
+    public ArrayList<String> getCommonAppearances(Collection<String> words) {
         ArrayList<ArrayList<String>> listOfAppearances = new ArrayList<>();
         for (String word : words) {
             listOfAppearances.add(getAppearances(word));

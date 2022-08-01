@@ -40,8 +40,12 @@ public class MainController {
                 wordsWithoutPrep.add(word);
             }
         }
-        ArrayList<String> appearances = new ArrayList<>(getDataBase().getCommonAppearances(wordsWithoutPrep));
-
+        ArrayList<String> appearances;
+        if (wordsWithoutPrep.isEmpty()) {
+            appearances = getDataBase().getAllFiles();
+        } else {
+            appearances = new ArrayList<>(getDataBase().getCommonAppearances(wordsWithoutPrep));
+        }
         for (Iterator<String> iterator = appearances.iterator(); iterator.hasNext(); ) {
             if (wordsWithMinus.isEmpty() && wordsWithPlus.isEmpty()) {
                 break;
