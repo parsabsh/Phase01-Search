@@ -20,15 +20,7 @@ public class InvertedIndexFileReader {
                 } else {
                     Scanner scanner = new Scanner(file);
                     while (scanner.hasNext()) {
-                        String word = scanner.next().toLowerCase();
-                        word = word.replace(".", "");
-                        word = word.replace(",", "");
-                        word = word.replace("!", "");
-                        word = word.replace("?", "");
-                        SnowballStemmer stemmer = new porterStemmer();
-                        stemmer.setCurrent(word);
-                        stemmer.stem();
-                        word = stemmer.getCurrent();
+                        String word = stem(scanner.next().toLowerCase());
                         if (invertedIndexMap.containsKey(word)) {
                             invertedIndexMap.get(word).add(file.getName());
                         } else {
@@ -40,5 +32,17 @@ public class InvertedIndexFileReader {
         } else {
             throw new FileNotFoundException();
         }
+    }
+
+    private String stem(String word) {
+        word = word.replace(".", "");
+        word = word.replace(",", "");
+        word = word.replace("!", "");
+        word = word.replace("?", "");
+        SnowballStemmer stemmer = new porterStemmer();
+        stemmer.setCurrent(word);
+        stemmer.stem();
+        word = stemmer.getCurrent();
+        return word;
     }
 }
