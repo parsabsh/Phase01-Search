@@ -7,7 +7,6 @@
     <list default="true" id="11a422ba-ae2a-4bc4-a0c2-7e0c235f2fb9" name="Changes" comment="bug fixed in advanced query without any - or + words">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/InvertedIndexDataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

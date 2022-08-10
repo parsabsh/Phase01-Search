@@ -18,28 +18,19 @@ public class MainController {
     }
 
     public String search(String input) {
-        input = input.toLowerCase();
-        String[] words = input.split(" ");
-        for (int i = 0; i < words.length; i++) {
-            SnowballStemmer stemmer = new porterStemmer();
-            stemmer.setCurrent(words[i]);
-            stemmer.stem();
-            words[i] = stemmer.getCurrent();
-        }
+        String[] words = splitAndStemWordsFromInputString(input);
 
         ArrayList<String> wordsWithoutPrep = new ArrayList<>();
         ArrayList<String> wordsWithPlus = new ArrayList<>();
         ArrayList<String> wordsWithMinus = new ArrayList<>();
 
-        for (String word : words) {
-            if (word.startsWith("+")) {
-                wordsWithPlus.add(word.substring(1));
-            } else if (word.startsWith("-")) {
-                wordsWithMinus.add(word.substring(1));
-            } else {
-                wordsWithoutPrep.add(word);
-            }
-        }
+        groupWords(words, wordsWithoutPrep, wordsWithPlus, wordsWithMinus);
+        ArrayList<String> appearances = mainQuery(wordsWithoutPrep, wordsWithPlus, wordsWithMinus);
+        if (appearances.isEmpty()) return "Nothing found!";
+        return appearances.toString();
+    }
+
+    private ArrayList<String> mainQuery(ArrayList<String> wordsWithoutPrep, ArrayList<String> wordsWithPlus, ArrayList<String> wordsWithMinus) {
         ArrayList<String> appearances;
         if (wordsWithoutPrep.isEmpty()) {
             appearances = getDataBase().getAllFiles();
@@ -67,8 +58,31 @@ public class MainController {
             }
             if (shouldBeDeleted) iterator.remove();
         }
-        if (appearances.isEmpty()) return "Nothing found!";
-        return appearances.toString();
+        return appearances;
+    }
+
+    private void groupWords(String[] words, ArrayList<String> wordsWithoutPrep, ArrayList<String> wordsWithPlus, ArrayList<String> wordsWithMinus) {
+        for (String word : words) {
+            if (word.startsWith("+")) {
+                wordsWithPlus.add(word.substring(1));
+            } else if (word.startsWith("-")) {
+                wordsWithMinus.add(word.substring(1));
+            } else {
+                wordsWithoutPrep.add(word);
+            }
+        }
+    }
+
+    private String[] splitAndStemWordsFromInputString(String input) {
+        input = input.toLowerCase();
+        String[] words = input.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            SnowballStemmer stemmer = new porterStemmer();
+            stemmer.setCurrent(words[i]);
+            stemmer.stem();
+            words[i] = stemmer.getCurrent();
+        }
+        return words;
     }
 
     public InvertedIndexDataBase getDataBase() {
